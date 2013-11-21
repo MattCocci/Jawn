@@ -68,5 +68,5 @@ else:
 
 	# Open the file if you can
 	toUse.append(toOpen)
-	proc = call(cmd)
+	proc = call(toUse)
 
