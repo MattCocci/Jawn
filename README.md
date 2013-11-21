@@ -57,6 +57,7 @@ your /usr/bin folder, or any folder on your machine. Then
 Then
     
     cd Jawn
+    chmod +x install.sh
     sh install.sh
 	
 This will write a default .jawn file in your home directory, then 
@@ -65,7 +66,14 @@ add a new function to your .bashrc in your home folder. The function
     
     j jawn
 
-The function j then
+All you need to do is restart your shell jawn, then you can
+open any jawn.
+
+
+Installation Note
+-------------------
+
+The function j proceeds as follows, when executed with the argument 'jawn':
 
 1.	Checks if jawn is a directory. If so, cd into that directory.
 2.	If jawn is a regular file, execute  
