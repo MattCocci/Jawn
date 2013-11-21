@@ -17,7 +17,7 @@ and it will open with the correct program (which you specify
 in a .jawn file). 
 
 + No more accidental calls like 'vim file1.pdf' or 'evince file2.tex.' 
-+ You specify the extension-command pairs where the command for a unique extension which can be arbitrarily long if you like to open files with a program using very specific settings.
++ You specify the extension-command pairs. Note the command for a unique extension can be arbitrarily long,  in case you like to open files using very specific settings with a program .
 + You hardly have to move since jawn uses a home key.
 
 
@@ -36,7 +36,7 @@ Then, when you type
     
     j file.ext
 
-at the command line, the file is open with command 'cmd' from your
+at the command line, the file is opened with command 'cmd' from your
 .jawn file.
 
 And if you happen to type
