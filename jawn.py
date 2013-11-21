@@ -36,6 +36,7 @@ else:
     # If everything checks out, proceed
     else:
 
+
 	# Match extensions with programs to use in a dictionary
 	jawn_dict = {}
 	jawn_file = open(home_dir + '/.jawn', 'r')
@@ -51,13 +52,23 @@ else:
 
 
 	# Get the extension, where txt is the default if there is none
-	if '.' in toOpen:
-	    ext = toOpen.split('.')[-1]
+	default = 'txt'
+	if '.' not in toOpen:
+	    ext = default
+
 	else:
-	    ext = 'txt'
+	    toOpen_split = toOpen.split('.')
+
+	    # Check if you're opening a dotfile like .bashrc or .vimrc
+	    if toOpen_split[0] == '':
+		ext = default
+	    else:
+		# Grab the extension
+		ext = toOpen.split('.')[-1]
 
 
-	# Check if there's that file extension is in the dictionary
+
+	# Check if that file extension is in the dictionary
 	if ext in jawn_dict:
 	    toUse = jawn_dict[ext]
 	    toUse = toUse.split()
