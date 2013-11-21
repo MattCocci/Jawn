@@ -50,29 +50,23 @@ else:
 	toOpen = sys.argv[1]	
 
 
-	# cd into if it's a directory
-	if os.path.isdir(toOpen):
-	    proc = call(['cd', toOpen])
-	    sys.exit()
-		
-	# If it's a regular file
+	# Get the extension, where txt is the default if there is none
+	if '.' in toOpen:
+	    ext = toOpen.split('.')[-1]
 	else:
-	    # Get the extension, where txt is the default if there is none
-	    if '.' in toOpen:
-		ext = toOpen.split('.')[-1]
-	    else:
-		ext = 'txt'
+	    ext = 'txt'
 
 
-	    # Check if there's that file extension is in the dictionary
-	    if ext in jawn_dict:
-		toUse = jawn_dict[ext]
-	    else:
-		print "Man, I don't know that jawn. Must not be from Philly.\nBut you could tell me about it in your ~/.jawn file so I know next time."
-		sys.exit()
+	# Check if there's that file extension is in the dictionary
+	if ext in jawn_dict:
+	    toUse = jawn_dict[ext]
+	    toUse = toUse.split()
+	else:
+	    print "Man, I don't know that jawn. Must not be from Philly.\nBut you could tell me about it in your ~/.jawn file so I know next time."
+	    sys.exit()
 
 
-	    # Open the file if you can
-	    cmd = [toUse, toOpen]
-	    proc = call(cmd)
+	# Open the file if you can
+	toUse.append(toOpen)
+	proc = call(cmd)
 
