@@ -16,11 +16,9 @@ Like a file launcher, just tell jawn what file you want to open,
 and it will open with the correct program (which you specify
 in a .jawn file). 
 
-    + No more accidental calls like 'vim file1.pdf' or 'evince file2.tex.' 
-    + You specify the extension-command pairs where the   
-    	command for a unique extension which can be arbitrarily 
-    	long if you like to open files with a program using very specific settings.
-    + You hardly have to move since jawn uses a home key.
++ No more accidental calls like 'vim file1.pdf' or 'evince file2.tex.' 
++ You specify the extension-command pairs where the command for a unique extension which can be arbitrarily long if you like to open files with a program using very specific settings.
++ You hardly have to move since jawn uses a home key.
 
 
 How it Works
@@ -69,12 +67,12 @@ add a new function to your .bashrc in your home folder. The function
 
 The function j then
 
-    1.	Checks if jawn is a directory. If so, cd into that directory.
-    2.	If jawn is a regular file, execute  
+1.	Checks if jawn is a directory. If so, cd into that directory.
+2.	If jawn is a regular file, execute  
     		
     		python INSTALL_DIR_PATH/jawn.py jawn 
     		
-    	which will check jawn for an extension and open it with the program specified in ~/.jawn (if it finds one). 
+	which will check jawn for an extension and open it with the program specified in ~/.jawn (if it finds one). 
 
 
 Note that "INSTALL\_DIR\_PATH" is the path of the directory you cloned. 
