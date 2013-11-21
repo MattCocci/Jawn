@@ -26,7 +26,7 @@ echo ""
 echo "Please enter the name for (or command to call) your favorite text editor (e.g. vim)"
 printf "[Type, then hit enter/return]: "
 read EDITOR
-printf "pdf=evince\neps=evince\ntxt=$EDITOR\nsh=$EDITOR\ntex=$EDITOR\nmd=$EDITOR\ndoc=openoffice.org\ndocx=openoffice.org\ndo=$EDITOR\nm=$EDITOR" > "$HOME/.jawn"
+printf "pdf=evince\neps=evince\ntxt=$EDITOR\nsh=$EDITOR\ntex=$EDITOR\nmd=$EDITOR\ndoc=openoffice.org\ndocx=openoffice.org\ndo=$EDITOR\nm=$EDITOR\npy=$EDITOR" > "$HOME/.jawn"
 
 # Should chmod jawn.py
 echo "Making jawn.py executable..."
