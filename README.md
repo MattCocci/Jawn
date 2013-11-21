@@ -1,7 +1,7 @@
 Jawn
 ====
 
-jawn *noun*: A word used by Philly cats to describe anything and everything.
+jawn (*noun*): A word used by Philly cats to describe anything and everything.
 --Urban Dictionary
 
 As you might guess, this program is for opening any jawn you want 
