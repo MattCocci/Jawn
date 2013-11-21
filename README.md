@@ -49,5 +49,35 @@ And if you happen to type
 where dir is some directory, you'll cd into that directory.
 
     
+Installation
+-------------
+
+Navigate to a location where you can store the executable. It could be
+your /usr/bin folder, or any folder on your machine. Then
+
+    git clone https://github.com/mcocci/Jawn.git
+
+Then
+    
+    cd Jawn
+    sh install.sh
 	
+This will write a default .jawn file in your home directory, then 
+add a new function to your .bashrc in your home folder. The function
+(and thus jawn itself) is exucuted by typing at the command line
+    
+    j jawn
+
+The function j then
+    1.	Checks if jawn is a directory. If so, cd into that directory.
+    2.	If jawn is a regular file, execute 
+
+	    python INSTALL_DIR_PATH/jawn.py jawn
+
+	which will check jawn for an extension and open it with the 
+	program specified in ~/.jawn (if it finds one). 
+
+Note that "INSTALL\_DIR\_PATH" is the path of the directory you cloned. 
+If ever move jawn.py, you'll have to change the path in the body of 
+the j() function that was written to your .bashrc. 
 
