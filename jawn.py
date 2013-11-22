@@ -57,7 +57,11 @@ else:
 	    ext = default
 
 	else:
-	    toOpen_split = toOpen.split('.')
+	    # Split on pathbreaks take the end of the path
+	    toOpen_split = toOpen.split('/')[-1]
+
+	    # Split on the period
+	    toOpen_split = toOpen_split.split('.')
 
 	    # Check if you're opening a dotfile like .bashrc or .vimrc
 	    if toOpen_split[0] == '':
