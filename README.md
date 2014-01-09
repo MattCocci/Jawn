@@ -6,6 +6,12 @@ jawn (*noun*): A word used by Philly cats to describe anything and everything.
 
 This program is for opening any jawn you want from the command line.
 
+__Testimonals__
++ "Jawn saved my marriage and changed my life!" --Barack Obama
++ "It's pretty dumb, but not aggressively stupid. So there's that. We'll probably file a suit over it soon." --The Winklevoss Twins
++ "Everything about this is terrible. [Meme]" --Reddit
+
+They get steadily worse, so I'll stop there.
 
 
 Basic Idea
