@@ -34,16 +34,16 @@ chmod +x jawn.py
 
 ## Add function to .bashrc
 echo "Adding j function to .bashrc..."
-printf "\nfunction j()"			    >> ~/.bashrc 
-printf "\n{"				    >> ~/.bashrc 
-printf '\n	if [ -d $1 ]'		    >> ~/.bashrc 
-printf '\n	then '			    >> ~/.bashrc 
-printf '\n	    cd $1'		    >> ~/.bashrc 
-printf '\n	else '			    >> ~/.bashrc 
-printf "\n	    python $PWD/jawn.py"    >> ~/.bashrc 
-printf ' $1'				    >> ~/.bashrc 
-printf '\n	fi'			    >> ~/.bashrc 
-printf '\n}'				    >> ~/.bashrc 
+printf "\nfunction j()"                 >> ~/.bashrc 
+printf "\n{"                            >> ~/.bashrc 
+printf '\n  if [ -d $1 ]'               >> ~/.bashrc 
+printf '\n  then '                      >> ~/.bashrc 
+printf '\n      cd $1'                  >> ~/.bashrc 
+printf '\n  else '                      >> ~/.bashrc 
+printf "\n      python $PWD/jawn.py"    >> ~/.bashrc 
+printf ' $1'                            >> ~/.bashrc 
+printf '\n  fi'                         >> ~/.bashrc 
+printf '\n}'                            >> ~/.bashrc 
 #echo "alias j='python $PWD/jawn.py'" >> $HOME/.bashrc
 
 
