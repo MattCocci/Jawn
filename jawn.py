@@ -73,17 +73,17 @@ else:
       # Grab the extension
       ext = toOpen.split('.')[-1]
 
-    # Check if that file extension is in the dictionary
-    if ext in jawn_dict:
-      toUse = jawn_dict[ext]
-      toUse = toUse.split()
-    else:
-      print 'Man, I don''t know that jawn you gave me, ' + ext
-      print '\nMust not be from Philly.'
-      print '\nBut you could tell me about it in your ~/.jawn file so I know next time.'
-      sys.exit()
+  # Check if that file extension is in the dictionary
+  if ext in jawn_dict:
+    toUse = jawn_dict[ext]
+    toUse = toUse.split()
+  else:
+    print 'Man, I don''t know that jawn you gave me, ' + ext
+    print '\nMust not be from Philly.'
+    print '\nBut you could tell me about it in your ~/.jawn file so I know next time.'
+    sys.exit()
 
-    # Open the file if you can
-    toUse.append(toOpen)
-    proc = call(toUse)
+  # Open the file if you can
+  toUse.append(toOpen)
+  proc = call(toUse)
 
